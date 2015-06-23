@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="8121.17" systemVersion="14D136" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="AgC-eL-Hgc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8101.14"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="8066.14"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Haptic_Demo_WatchKit_App" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="XyG-gJ-VOl">
+                            <items>
+                                <tableRow identifier="HapticTableRowController" id="jf7-QK-AC0" customClass="HapticTableRowController" customModule="Haptic_Demo_WatchKit_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="nb6-ZK-BbW">
+                                        <items>
+                                            <button width="1" alignment="left" title="Button" id="K2f-Tq-Xgb">
+                                                <connections>
+                                                    <action selector="buttonPressed" destination="jf7-QK-AC0" id="WRH-4k-A52"/>
+                                                </connections>
+                                            </button>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="interfaceButton" destination="K2f-Tq-Xgb" id="8Ng-24-VQm"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="interfaceTable" destination="XyG-gJ-VOl" id="18e-Db-Ppd"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
